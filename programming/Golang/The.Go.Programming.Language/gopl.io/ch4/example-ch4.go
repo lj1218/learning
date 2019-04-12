@@ -119,4 +119,11 @@ func main() {
     if age, ok := ages["Joe"]; !ok {
         fmt.Printf("Joe is not a key in map ages, and age = %d\n", age)
     }
+
+
+    // 4.4. Structs
+    // 4.4.1. Struct Literals
+    type Point struct { X, Y int }
+    p := Point{1, 2}
+    fmt.Println(p)
 }
