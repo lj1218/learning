@@ -13,7 +13,7 @@ func main() {
 	//var buf io.Writer
 	fmt.Printf("buf: %v, %T, buf == nil: %v\n", buf, buf, buf == nil)
 	if debug {
-		buf = new(bytes.Buffer)  // 启用输出收集
+		buf = new(bytes.Buffer) // 启用输出收集
 	}
 	fmt.Printf("buf: %v, %T, buf == nil: %v\n", buf, buf, buf == nil)
 	f(buf)
